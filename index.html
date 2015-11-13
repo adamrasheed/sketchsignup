@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sketch Videos &amp; Tutorials | Sign Up</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+   
+    <h1>Want Course Videos &amp; Sketch Files?</h1>
+    <h3>Sign Up and Get access to it all!</h3>
+    
+    <div class="container">
+        <img src="Sketch-Signup-Image.png" alt="Sketch Tutorial" class="setch tutorials">
+    
+        <div class="info">
+        <h4>Sign Up to get Access to:</h4>
+        <ul>
+            <li><u>Sketch Files to all Videos</u> as they get published</li>
+            <li>Behind the Scenes sketches for every project</li>
+            <li>Bonus Content not published on my Channel!</li>
+        </ul>
+    </div>
+    
+        <div class="optin">
+        <div class="cta">Give Me My Access</div>
+        
+        <!--Signup Mailchimp Form-->
+        <form action="//adamrasheed.us5.list-manage.com/subscribe/post?u=e56ce19cee870ac0f19d3dbfa&amp;id=1e0545633d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate class="form hidden">
+            <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" />
+            <input type="submit" value="Submit" />
+        </form>	
+    </div><!--end .optin-->
+    
+    </div><!--end .container-->
+    
+    
+    <div class="credit">
+        <small>
+        &copy; 2015-2016 <a href="http://creatix.io">Adam Rasheed</a> |
+        <a href="http://eepurl.com/btvyBf"> Get MailChimp</a> |
+        <a href="https://www.namecheap.com/?aff=89392">Web Hosting</a>
+        </small>
+    </div>
+    
+<!--SCRIPTS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $( document ).ready(function() {
+    $(".cta").click(function() {
+		 $("form").slideDown(250);
+		 // if form is visible
+		 if ($("form").is(":visible")) {
+			 // change .cta cursor to default
+			 $(".cta").css('cursor', 'default');
+		 }
+		 $("#email").focus();
+	 });
+});    
+</script>
+
+</body>
+</html>
+

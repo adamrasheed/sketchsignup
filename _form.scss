@@ -1,0 +1,62 @@
+.optin {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 100%;
+}
+
+form { 
+    background: $darkred;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    padding: 1rem;
+    maring: 0;
+    
+    input {
+        padding: .75rem;
+        margin: 0;
+
+        &[type="email"] {
+            
+            border: none;
+            font-size: 1rem;
+            flex: 1;
+            outline: $red ;
+            
+            &:focus {
+                outline: .25rem solid $red;
+            }
+        }
+		
+        &[type="submit"]{
+			background: linear-gradient(lighten($red, 5%), lighten($red, 0%));
+			cursor: pointer;
+			color: white;
+			border: none;
+			font-size: 1rem;
+			margin: 0 0 0 1rem;
+			padding: 0 3rem;
+			transition: all .25s ease-in-out;
+            &:hover{
+				background: linear-gradient(lighten($red, 6%), lighten($red, 1%));
+            }
+        }
+
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    
+    form {
+        flex-flow: row wrap;
+
+        input {
+            padding: 1rem !important;
+            margin: 0 !important;
+            flex: 100%;
+
+            &[type="submit"] {
+            margin-top: 1rem !important
+        }
+        }
+    }
+}
