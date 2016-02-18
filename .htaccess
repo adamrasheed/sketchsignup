@@ -1,0 +1,6 @@
+# block visitors referred from semalt.com
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} semalt.com [NC]
+RewriteRule .* – [F]
+
+Read more: http://www.forthea.com/block-semalt-crawler/#ixzz40YHI3Rnc
