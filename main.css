@@ -1,30 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300);
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  background: #eeeeee;
-  color: #212121;
-  font-family: "Source Sans Pro";
-  font-size: 16px;
-  padding: 1rem 2rem 2rem;
-}
-
 ul {
   list-style: disc;
   margin: 0 auto 2rem;
   max-width: 27rem;
-  text-indent: 0.25rem;
+  text-indent: .25rem;
 }
+
 ul li {
   font-size: 1.25rem;
-  margin: 0 0 0.75rem;
+  margin: 0 0 .75rem;
 }
 
 h1, h2, h3, h4 {
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -74,22 +61,22 @@ a {
   h1 {
     font-size: 3.2em;
   }
-
   h3 {
     font-size: 1.8em;
   }
 }
+
 @media screen and (max-width: 580px) {
   h1 {
     font-size: 3em;
   }
-
   h3 {
     font-size: 1.4em;
   }
 }
+
 .cta {
-  background: #e52b50;
+  background: #E52B50;
   color: white;
   cursor: pointer;
   display: block;
@@ -100,6 +87,7 @@ a {
   text-decoration: none;
   width: 100%;
 }
+
 @media screen and (max-width: 600px) {
   .cta {
     line-height: 1.4;
@@ -108,45 +96,36 @@ a {
 }
 
 .optin {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   width: 100%;
 }
 
 form {
-  background: #9c2542;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  background: #9C2542;
   display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   padding: 1rem;
   maring: 0;
 }
+
 form input {
   padding: .75rem;
   margin: 0;
 }
+
 form input[type="email"] {
   border: none;
   font-size: 1rem;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  outline: #e52b50;
+  outline: #E52B50;
 }
+
 form input[type="email"]:focus {
-  outline: 0.25rem solid #e52b50;
+  outline: 0.25rem solid #E52B50;
 }
+
 form input[type="submit"] {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e84263), to(#e52b50));
-  background: -webkit-linear-gradient(#e84263, #e52b50);
   background: linear-gradient(#e84263, #e52b50);
   cursor: pointer;
   color: white;
@@ -154,33 +133,27 @@ form input[type="submit"] {
   font-size: 1rem;
   margin: 0 0 0 1rem;
   padding: 0 3rem;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
+
 form input[type="submit"]:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e84667), to(#e63054));
-  background: -webkit-linear-gradient(#e84667, #e63054);
   background: linear-gradient(#e84667, #e63054);
 }
 
 @media screen and (max-width: 600px) {
   form {
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   form input {
     padding: 1rem !important;
     margin: 0 !important;
-    -webkit-box-flex: 100%;
-    -webkit-flex: 100%;
-    -ms-flex: 100%;
     flex: 100%;
   }
   form input[type="submit"] {
     margin-top: 1rem !important;
   }
 }
+
 .container {
   margin: 0 auto;
   max-width: 30rem;
@@ -215,27 +188,21 @@ img {
 }
 
 .downloads {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   max-width: 64rem;
   margin: 0 auto;
 }
+
 .downloads .download {
-  background: #e52b50;
+  background: #E52B50;
   display: block;
   max-width: 14rem;
   margin: 0 1rem 2rem;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
+
 .downloads .download img {
   display: block;
   margin: 0 auto;
@@ -244,17 +211,18 @@ img {
   width: auto;
   max-width: 100%;
 }
+
 .downloads .download h4 {
   color: white;
   margin: 0;
   padding: 1rem;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
 .downloads .download:hover {
   background: #e7395b;
 }
+
 @media screen and (max-width: 580px) {
   .downloads {
     width: 100%;
@@ -269,13 +237,11 @@ img {
 }
 
 .shadow2, .downloads .download, #youtube {
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
+
 .shadow2:hover, .downloads .download:hover, #youtube:hover {
-  -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.19), 0 8px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.19), 0 8px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -288,6 +254,7 @@ img {
   padding: 1.25rem;
   text-align: center;
 }
+
 #youtube:hover {
   background: #f4a221;
 }
