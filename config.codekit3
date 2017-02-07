@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25504",
 "files": {
+	"\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.htaccess",
+		"oF": 0
+		},
 	"\/01-genconnect-wireframe-download-thumbnail.png": {
 		"ft": 32768,
 		"iS": 51812,
@@ -141,17 +147,23 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/main.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/main.css.map",
+		"oF": 0
+		},
 	"\/main.sass": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 2,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/main.css",
-		"oF": 0,
-		"oS": 0,
+		"oAP": "\/main.css",
+		"oF": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/prepros.cfg": {

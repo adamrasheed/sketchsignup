@@ -3,51 +3,105 @@
     width: 100%;
 }
 
-form { 
+.form { 
+    color: $text;
     background: $darkred;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-content: center;
+    justify-content: flex-start;
     padding: 1rem;
     maring: 0;
     
-    input {
+    &__label {
+        color: white;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        opacity: 0.8;
+        margin-bottom: 0.5rem;
+        display: block;
+        
+    }
+    
+    &__input {
         padding: .75rem;
         margin: 0;
-
-        &[type="email"] {
-            
-            border: none;
-            font-size: 1rem;
-            flex: 1;
-            outline: $red ;
-            
-            &:focus {
-                outline: .25rem solid $red;
-            }
+        display: block;
+    }
+    
+    
+    &__email {
+        border: none;
+        font-size: 1rem;
+        
+        outline: $red ;
+        width: 100%;
+        &:focus {
+            outline: .25rem solid $red;
         }
-		
-        &[type="submit"]{
-			background: linear-gradient(lighten($red, 5%), lighten($red, 0%));
-			cursor: pointer;
-			color: white;
-			border: none;
-			font-size: 1rem;
-			margin: 0 0 0 1rem;
-			padding: 0 3rem;
-			transition: all .25s ease-in-out;
-            &:hover{
-				background: linear-gradient(lighten($red, 6%), lighten($red, 1%));
-            }
-        }
+    }
+    
+    .mce_inline_error {
+        display: block;
+        margin: .5rem 0;
+    }
+    
+    &__submit{
+        background: linear-gradient(lighten($red, 5%), lighten($red, 0%));
+        cursor: pointer;
+        color: white;
+        border: none;
+        display: block;
+        font-size: 1rem;
+        letter-spacing: .05em;
+        margin: 1.5rem 0 1rem 1rem;
+        height: calc(1rem + 1.6rem);
+        padding: 0 2rem;
+        transition: all .25s ease-in-out;
 
-    } 
+        &:hover{
+            background: linear-gradient(lighten($red, 6%), lighten($red, 1%));
+        }
+    }
+    
+    &__field-group {
+        margin-bottom: 1rem;
+        
+        &--email {
+            flex: 1 1;
+        }
+        
+        &--submit {
+            display: flex;
+            align-content: center;
+        }
+        
+        &--responses {
+            flex: 100%;
+            padding: 0;
+            list-style: none;
+            
+        }
+        
+    }
 }
+
+.response {
+    color: white;
+    line-height: 1.4;
+    font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
+}
+
+#mce-error-response {background:red}
+#mce-success-response {}
 
 @media screen and (max-width: 600px) {
     
     form {
-        flex-flow: row wrap;
 
         input {
             padding: 1rem !important;

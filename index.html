@@ -9,7 +9,7 @@
     <!--CSS-->
     <style>
         * {box-sizing: border-box;}
-        body { background: #EEEEEE; color: #212121; font-family: 'Avenir', serif; font-size: 16px; padding: 2rem !important;}
+        body { background: #EEEEEE; color: #212121; font-family: 'Avenir Next', serif; font-size: 16px; padding: 2rem !important; text-rendering: optimizeLegibility;}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="main.css" type="text/css">
@@ -49,10 +49,27 @@
         <div class="cta">Get Instant Access</div>
         
         <!--Signup Mailchimp Form-->
-        <form action="//adamrasheed.us5.list-manage.com/subscribe/post?u=e56ce19cee870ac0f19d3dbfa&amp;id=1e0545633d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form hidden">
-            <input type="email" id="email" name="email"  placeholder="johndoe@gmail.com" required/>
-            <input type="submit" value="Submit" />
-        </form>	
+        <form action="//xyz.us5.list-manage.com/subscribe/post?u=e56ce19cee870ac0f19d3dbfa&amp;id=1e0545633d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+	
+            <div class="mc-field-group form__field-group form__field-group--email">
+                <label class="form__label" for="mce-EMAIL">Email Address </label>
+                <input type="email" value="" name="EMAIL" class="required email form__input form__email" placeholder="johndoe@gmail.com" id="mce-EMAIL">
+            </div>
+
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e56ce19cee870ac0f19d3dbfa_1e0545633d" tabindex="-1" value=""></div>
+            
+            <div class="form__field-group form__field-group--submit">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button form__input form__submit " required>
+            </div>
+            
+            <div id="mce-responses" class="form__responses form__field-group form__field-group--responses">
+                <div class="response form__responses form__responses--error" id="mce-error-response" style="display: none"></div>
+                <div class="response form__responses form__responses--success" id="mce-success-response" style="display: none"></div>
+            </div>
+
+            </form><!-- End Form -->
+            <!-- MC Script -->
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </div><!--end .optin-->
     
     </div><!--end .container-->
@@ -71,9 +88,9 @@
 <script>
     $( document ).ready(function() {
     $(".cta").click(function() {
-		 $("form").slideDown(250);
+		 $(".form").slideDown(250);
 		 // if form is visible
-		 if ($("form").is(":visible")) {
+		 if ($(".form").is(":visible")) {
 			 // change .cta cursor to default
 			 $(".cta").css('cursor', 'default');
 		 }
